@@ -1,4 +1,4 @@
-#AQUEST PROGRAMA LLEGEIX IN STRING MULTILINEA!!
+#AQUEST PROGRAMA LLEGEIX UN STRING MULTILINEA!!
 
 require 'i2c/drivers/lcd'
 display=I2C::Drivers::LCD::Display.new('/dev/i2c-1',0x27)
