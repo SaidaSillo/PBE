@@ -1,3 +1,5 @@
+#AQUEST PROGRAMA LLEGEIX IN STRING MULTILINEA!!
+
 require 'i2c/drivers/lcd'
 display=I2C::Drivers::LCD::Display.new('/dev/i2c-1',0x27)
 puts"Escriu una frase multilinea"
