@@ -4,7 +4,7 @@ require 'i2c/drivers/lcd'
 class GtkLcd
 	def init_window
 		@@window = Gtk::Window.new("Puzzle 2")
-		@@window.set_size_request(305, 120)
+		@@window.set_size_request(205, 120)
 		@@window.set_border_width(10)
 
 		@@grid=Gtk::Grid.new		#incloem la quadricula
@@ -37,8 +37,8 @@ class GtkLcd
 		#Creem el recuadre de text
 		@@buf=Gtk::TextView.new
 		@@buf.set_size_request(205,80)
-		@@buf.set_monospace(true)
-		@@buf.set_wrap_mode(1)
+		@@buf.set_monospace(true)	#monoespai per la font
+		@@buf.set_wrap_mode(1)		#limita els caràcters que es veuen en una fila
 		@@grid.attach(@@buf,3,0,3,1)
 	end
 end
